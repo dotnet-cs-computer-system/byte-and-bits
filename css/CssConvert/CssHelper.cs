@@ -41,14 +41,14 @@ public class CssHelper
         string greenString = hexColor.Substring(2, 2);
         string blueString = hexColor.Substring(4, 2);
         
-        int redHex = ToHex(redString);
-        int greenHex = ToHex(greenString);
-        int blueHex = ToHex(blueString);
+        int red = ToInt(redString);
+        int green = ToInt(greenString);
+        int blue = ToInt(blueString);
 
         return Color.FromArgb(255, redHex, greenHex, blueHex);
     }
 
-    private static int ToHex(string input)
+    private static int ToInt(string input)
     {
         // TODO: 
         // input length is 2, i.e "4A"
