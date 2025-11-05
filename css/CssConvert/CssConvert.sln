@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35828.75 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CssConvert", "CssConvert.csproj", "{F7687FFD-8E44-4397-8F98-F0BD6F839335}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CssConvert.Tests.Unit", "..\CssConvert.Tests.Unit\CssConvert.Tests.Unit.csproj", "{2714D1D1-4E91-49DF-9236-5EB8D0390F9B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F7687FFD-8E44-4397-8F98-F0BD6F839335}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7687FFD-8E44-4397-8F98-F0BD6F839335}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7687FFD-8E44-4397-8F98-F0BD6F839335}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7687FFD-8E44-4397-8F98-F0BD6F839335}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2714D1D1-4E91-49DF-9236-5EB8D0390F9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2714D1D1-4E91-49DF-9236-5EB8D0390F9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2714D1D1-4E91-49DF-9236-5EB8D0390F9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2714D1D1-4E91-49DF-9236-5EB8D0390F9B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2F830767-906E-4A11-9444-D146E3B46D9B}
+	EndGlobalSection
+EndGlobal
