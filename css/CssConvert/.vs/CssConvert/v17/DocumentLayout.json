@@ -3,8 +3,22 @@
   "WorkspaceRootPath": "C:\\work_space\\source_code\\.net\\cs_primer\\computer_system\\Main\\css\\CssConvert\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F7687FFD-8E44-4397-8F98-F0BD6F839335}|CssConvert.csproj|c:\\work_space\\source_code\\.net\\cs_primer\\computer_system\\main\\css\\cssconvert\\csshelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7687FFD-8E44-4397-8F98-F0BD6F839335}|CssConvert.csproj|solutionrelative:csshelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7687FFD-8E44-4397-8F98-F0BD6F839335}|CssConvert.csproj|c:\\work_space\\source_code\\.net\\cs_primer\\computer_system\\main\\css\\cssconvert\\mycssconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7687FFD-8E44-4397-8F98-F0BD6F839335}|CssConvert.csproj|solutionrelative:mycssconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F7687FFD-8E44-4397-8F98-F0BD6F839335}|CssConvert.csproj|c:\\work_space\\source_code\\.net\\cs_primer\\computer_system\\main\\css\\cssconvert\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F7687FFD-8E44-4397-8F98-F0BD6F839335}|CssConvert.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2714D1D1-4E91-49DF-9236-5EB8D0390F9B}|..\\CssConvert.Tests.Unit\\CssConvert.Tests.Unit.csproj|c:\\work_space\\source_code\\.net\\cs_primer\\computer_system\\main\\css\\cssconvert.tests.unit\\cssconvert.tests.unit.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2714D1D1-4E91-49DF-9236-5EB8D0390F9B}|..\\CssConvert.Tests.Unit\\CssConvert.Tests.Unit.csproj|c:\\work_space\\source_code\\.net\\cs_primer\\computer_system\\main\\css\\cssconvert.tests.unit\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F7687FFD-8E44-4397-8F98-F0BD6F839335}|CssConvert.csproj|c:\\work_space\\source_code\\.net\\cs_primer\\computer_system\\main\\css\\cssconvert\\cssconvert.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
@@ -21,7 +35,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -41,7 +55,59 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CssConvert.Tests.Unit",
+              "DocumentMoniker": "C:\\work_space\\source_code\\.net\\cs_primer\\computer_system\\Main\\css\\CssConvert.Tests.Unit\\CssConvert.Tests.Unit.csproj",
+              "RelativeDocumentMoniker": "..\\CssConvert.Tests.Unit\\CssConvert.Tests.Unit.csproj",
+              "ToolTip": "C:\\work_space\\source_code\\.net\\cs_primer\\computer_system\\Main\\css\\CssConvert.Tests.Unit\\CssConvert.Tests.Unit.csproj",
+              "RelativeToolTip": "..\\CssConvert.Tests.Unit\\CssConvert.Tests.Unit.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-05T04:46:38.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "MyCssConverter.cs",
+              "DocumentMoniker": "C:\\work_space\\source_code\\.net\\cs_primer\\computer_system\\Main\\css\\CssConvert\\MyCssConverter.cs",
+              "RelativeDocumentMoniker": "MyCssConverter.cs",
+              "ToolTip": "C:\\work_space\\source_code\\.net\\cs_primer\\computer_system\\Main\\css\\CssConvert\\MyCssConverter.cs",
+              "RelativeToolTip": "MyCssConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA0AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T04:17:39.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\work_space\\source_code\\.net\\cs_primer\\computer_system\\Main\\css\\CssConvert.Tests.Unit\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "..\\CssConvert.Tests.Unit\\UnitTest1.cs",
+              "ToolTip": "C:\\work_space\\source_code\\.net\\cs_primer\\computer_system\\Main\\css\\CssConvert.Tests.Unit\\UnitTest1.cs",
+              "RelativeToolTip": "..\\CssConvert.Tests.Unit\\UnitTest1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T04:16:59.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CssHelper.cs",
+              "DocumentMoniker": "C:\\work_space\\source_code\\.net\\cs_primer\\computer_system\\Main\\css\\CssConvert\\CssHelper.cs",
+              "RelativeDocumentMoniker": "CssHelper.cs",
+              "ToolTip": "C:\\work_space\\source_code\\.net\\cs_primer\\computer_system\\Main\\css\\CssConvert\\CssHelper.cs",
+              "RelativeToolTip": "CssHelper.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAQwDkAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T04:14:35.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "CssConvert",
               "DocumentMoniker": "C:\\work_space\\source_code\\.net\\cs_primer\\computer_system\\Main\\css\\CssConvert\\CssConvert.csproj",
               "RelativeDocumentMoniker": "CssConvert.csproj",
@@ -53,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "UnitTest1.cs",
               "DocumentMoniker": "C:\\work_space\\source_code\\.net\\cs_primer\\computer_system\\Main\\CssConvert.Tests.Unit\\UnitTest1.cs",
               "RelativeDocumentMoniker": "..\\..\\CssConvert.Tests.Unit\\UnitTest1.cs",
@@ -65,13 +131,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\work_space\\source_code\\.net\\cs_primer\\computer_system\\Main\\css\\CssConvert\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\work_space\\source_code\\.net\\cs_primer\\computer_system\\Main\\css\\CssConvert\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-05T02:15:03.162Z",
               "EditorCaption": ""
