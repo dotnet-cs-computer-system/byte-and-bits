@@ -15,6 +15,9 @@
       "RelativeMoniker": "D:0:0:{F7687FFD-8E44-4397-8F98-F0BD6F839335}|CssConvert.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{2714D1D1-4E91-49DF-9236-5EB8D0390F9B}|..\\CssConvert.Tests.Unit\\CssConvert.Tests.Unit.csproj|c:\\work_space\\source_code\\.net\\cs_primer\\computer_system\\main\\css\\cssconvert.tests.unit\\usings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2714D1D1-4E91-49DF-9236-5EB8D0390F9B}|..\\CssConvert.Tests.Unit\\CssConvert.Tests.Unit.csproj|c:\\work_space\\source_code\\.net\\cs_primer\\computer_system\\main\\css\\cssconvert.tests.unit\\cssconvert.tests.unit.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
@@ -35,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -47,15 +50,11 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "CssConvert.Tests.Unit",
               "DocumentMoniker": "C:\\work_space\\source_code\\.net\\cs_primer\\computer_system\\Main\\css\\CssConvert.Tests.Unit\\CssConvert.Tests.Unit.csproj",
               "RelativeDocumentMoniker": "..\\CssConvert.Tests.Unit\\CssConvert.Tests.Unit.csproj",
@@ -74,14 +73,14 @@
               "RelativeDocumentMoniker": "MyCssConverter.cs",
               "ToolTip": "C:\\work_space\\source_code\\.net\\cs_primer\\computer_system\\Main\\css\\CssConvert\\MyCssConverter.cs",
               "RelativeToolTip": "MyCssConverter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA0AAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA0AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-05T04:17:39.849Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "UnitTest1.cs",
               "DocumentMoniker": "C:\\work_space\\source_code\\.net\\cs_primer\\computer_system\\Main\\css\\CssConvert.Tests.Unit\\UnitTest1.cs",
               "RelativeDocumentMoniker": "..\\CssConvert.Tests.Unit\\UnitTest1.cs",
@@ -100,14 +99,31 @@
               "RelativeDocumentMoniker": "CssHelper.cs",
               "ToolTip": "C:\\work_space\\source_code\\.net\\cs_primer\\computer_system\\Main\\css\\CssConvert\\CssHelper.cs",
               "RelativeToolTip": "CssHelper.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAQwDkAAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-05T04:14:35.915Z",
               "EditorCaption": ""
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
+              "Title": "Usings.cs",
+              "DocumentMoniker": "C:\\work_space\\source_code\\.net\\cs_primer\\computer_system\\Main\\css\\CssConvert.Tests.Unit\\Usings.cs",
+              "RelativeDocumentMoniker": "..\\CssConvert.Tests.Unit\\Usings.cs",
+              "ToolTip": "C:\\work_space\\source_code\\.net\\cs_primer\\computer_system\\Main\\css\\CssConvert.Tests.Unit\\Usings.cs",
+              "RelativeToolTip": "..\\CssConvert.Tests.Unit\\Usings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T09:39:35.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "CssConvert",
               "DocumentMoniker": "C:\\work_space\\source_code\\.net\\cs_primer\\computer_system\\Main\\css\\CssConvert\\CssConvert.csproj",
               "RelativeDocumentMoniker": "CssConvert.csproj",
@@ -119,7 +135,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "UnitTest1.cs",
               "DocumentMoniker": "C:\\work_space\\source_code\\.net\\cs_primer\\computer_system\\Main\\CssConvert.Tests.Unit\\UnitTest1.cs",
               "RelativeDocumentMoniker": "..\\..\\CssConvert.Tests.Unit\\UnitTest1.cs",
@@ -137,7 +153,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\work_space\\source_code\\.net\\cs_primer\\computer_system\\Main\\css\\CssConvert\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-05T02:15:03.162Z",
               "EditorCaption": ""
