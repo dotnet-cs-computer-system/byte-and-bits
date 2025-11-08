@@ -1,0 +1,49 @@
+1. cs primer
+----------------------------------------------------------------------------
+(1) hiểu ngữ cảnh
+
+(2) coi video 
+
+(3) quick capture 
+
+(4) Write plan 
+
+(5) Write code 
+
+(6) Quick capture code 
+
+----------------------------------------------------------------------------
+(1) hiểu ngữ cảnh
+- bài toán đảo hình ảnh 
+- input là 1 file .bmp , out là rorated.bmp. file này là hình ảnh đã bi xoay. 
+- idea có thể là di chuyển các điểm pixel 
+
+(2) coi video 
+- read 2 bytes first 
+- open(file) as f: 
+	data = f.read()
+	
+- printf(data[:2 ])
+- - printf(data[:2 ])
+
+- how the bytes layout 
+
+----------------------------------------------------------------------------
+(4) Write plan 
+- Setup code 
+
+- Watch video again
+
+- Dowload code 
+
+- Xoay thu hinh 
+
+- Test 
+
+- Rebuild a code 
+
+----------------------------------------------------------------------------
+(5) Doing
+(5.1) Setup code 
+------------------------------------------
+(5.2) Read a file as hexa
