@@ -22,9 +22,9 @@ namespace UTF_8_TRUNCATE
                 if (line == null) break;
 
                 var truncateChars = Truncate(line[1..], line[0]).ToList();
+                truncateChars.Add(0x0A);
 
                 fsOut.Write(truncateChars.ToArray());
-                fsOut.WriteByte(0x0A); // '\n' 
             }
         }
 
