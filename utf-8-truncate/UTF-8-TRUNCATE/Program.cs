@@ -6,6 +6,10 @@ namespace UTF_8_TRUNCATE
 {
     internal class Program
     {
+        private static byte LineFeed = 0x0A; // '\n'
+        private static byte Utf8LeadingMask = 0xC0; // 1100_0000
+        private static byte Utf8Continuation = 0x80; // 1000_0000
+
         static void Main(string[] args)
         {
             Console.WriteLine("Hello, World!");
@@ -35,7 +39,7 @@ namespace UTF_8_TRUNCATE
                 return remainChars[..^1];
             }
 
-            while (numberToCut > 0 && ((remainChars[numberToCut] & 0xC0) == 0x80)) // check remainChars[numberToCut] is continue byte
+            while (numberToCut > 0 && ((remainChars[numberToCut] & Utf8LeadingMask) == Utf8Continuation)) // check remainChars[numberToCut] is continue byte
             {
                 numberToCut = (byte)(numberToCut - 1);
             }
@@ -51,7 +55,7 @@ namespace UTF_8_TRUNCATE
             while ((b = fs.ReadByte()) != -1)
             {
                 bytes.Add((byte)b);
-                if (b == 0x0A) // '\n'
+                if (b == LineFeed) // '\n'
                     break;
             }
 
