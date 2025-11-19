@@ -1,6 +1,4 @@
-﻿
-using System.Collections;
-using System.Text;
+﻿using System.Text;
 
 namespace SneakyNAN.Core
 {
@@ -12,16 +10,18 @@ namespace SneakyNAN.Core
 
             string message = "xinch";
             double nanNumber = Conceal(message);
+            Console.WriteLine(nanNumber);
 
             string extractedMessage = Extractor(nanNumber);
 
             if (message != extractedMessage)
             {
                 Console.WriteLine($"fail - message: {message} - extractedMessage: {extractedMessage}");
+                Console.WriteLine($"length of message: {message.Length} - length of extractedMessage: {extractedMessage.Length}");
             }
             else
             {
-                Console.WriteLine($"sucess: {message}");
+                Console.WriteLine($"success: {message}");
             }
         }
 
@@ -45,191 +45,60 @@ namespace SneakyNAN.Core
 
             //sign
             rawNumber = rawNumber | 0b0;
-            Console.WriteLine($"after sign: {PrintBits(rawNumber)}");
 
             // exponentBits
-            Console.WriteLine($" 0x7FF0_0000_0000_0000: {PrintBits(0x7FF0_0000_0000_0000)}");
-            rawNumber = rawNumber | 0x7FF0_0000_0000_0000;
-            Console.WriteLine($"after exponentBits: {PrintBits(rawNumber)}");
+            rawNumber = rawNumber | 0b0111_1111_1111_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000UL;
 
             // fixedBit1
-            Console.WriteLine($" 0x7FF8_0000_0000_0000: {PrintBits(0x7FF8_0000_0000_0000)}");
-            rawNumber = rawNumber | 0x7FF8_0000_0000_0000;
-            Console.WriteLine($"after fixedBit1: {PrintBits(rawNumber)}");
+            rawNumber = rawNumber | 0b0111_1111_1111_1000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000UL;
 
             // length3
             ulong lengthSize = (ulong) messageBytes.Length;
             lengthSize = lengthSize << 48;
-            Console.WriteLine($" lengthSize: {PrintBits(lengthSize)}");
             rawNumber = rawNumber | lengthSize;
-            Console.WriteLine($"after length3: {PrintBits(rawNumber)}");
 
-            // message48(6 - byte payload)          ~~message payload
-            //Console.WriteLine($"value: " {BytesToUlongBigEndian()})
-            //messageBytes = Allocate(messageBytes);
-            //Console.WriteLine($" messageBytes: {PrintBytes(messageBytes)}");
-            ulong payload = BytesToUlongBigEndian(messageBytes);
-            //Console.WriteLine($" payload: {PrintBits(payload)}");
-            //int fixedBit1 = 0b1;
-            //int lengthBit3 = messageBytes.Length;
-            //messageBytes = Allocate(messageBytes);
-
-            return 123;
-        }
-
-        public static ulong MoveBit(byte[] bytes)
-        {
-            if (bytes.Length > 8)
-                throw new ArgumentException("Max 8 bytes");
-            ulong n = 0;
-            int bitIndex = 0;
-            for (int i = 0; i < 64; i++)
+            // message48(6 bytes) ~~ payload  
+            // rawNumber = 0b0111_1111_1111_1101_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000UL
+            //rawNumber = BitHelper.AppendToUlong(rawNumber, messageBytes);
+            for (int i = 0; i < messageBytes.Length; i++)
             {
-                // push 0 to n
-                // if i == 15, push vale from bytes to n
-                if (i <= 15)
-                {
-                    // do notthing
-                }
-                else
-                {
-                    // get bit from bytes 
-                    // append bit to n
-                    int bit = GetBit(bytes, bitIndex);
-                    bitIndex++;
-                    AppendBit(n, bit);
-                }
+                // rawNumber = 0b0111_1111_1111_1101_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000UL
+                // byteLong = 0b0000_0000_0000_0000_[0000_0000]_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000UL
+                // 1. move to right 40 bits
+                // 2. move to right 32 bits
+                ulong byteLong = messageBytes[i];
+                byteLong = byteLong << (40 - (i*8));
+                rawNumber = rawNumber | byteLong;
             }
-            return n;
-        }
-
-        public static int GetBit(byte[] bytes, int bitIndex)
-        {
-            if (bytes == null)
-                throw new ArgumentNullException(nameof(bytes));
-
-            int totalBits = bytes.Length * 8;
-            if (bitIndex < 0 || bitIndex >= totalBits)
-                throw new ArgumentOutOfRangeException(nameof(bitIndex));
-
-            int byteIndex = bitIndex / 8;
-            int bitInByte = 7 - (bitIndex % 8); // MSB trước
-
-            int b = bytes[byteIndex];
-            int bit = (b >> bitInByte) & 1;
-            return bit;
-        }
-
-        public static ulong AppendBit(ulong n, int bit)
-        {
-            n <<= 1;                // chừa chỗ cho bit mới
-            if ((bit & 1) != 0)     // nếu là 1 thì set LSB
-            {
-                n |= 1UL;
-            }
-            return n;
-        }
-
-        public static ulong BytesToUlongBigEndian(byte[] bytes)
-        {
-            if (bytes.Length > 8)
-                throw new ArgumentException("Max 8 bytes");
-            Console.WriteLine("BytesToUlongBigEndian");
-            ulong value = 0;
-            //foreach (var b in bytes)
-            //{
-            //    Console.WriteLine($"value: {PrintBits(value)}");
-            //    ulong move8ToRight = value << 8;
-            //    value = move8ToRight | b;
-            //    Console.WriteLine($"move8ToRight: {PrintBits(move8ToRight)}");
-            //    Console.WriteLine($"new: {PrintBits(value)}");
-            //    Console.WriteLine();
-            //}
-            int index = 0;
-            while (true)
-            {
-                if (index <= bytes.Length)
-                byte b = bytes[index];
-
-                index++;
-            }
-
-            return value;
-        }
-
-        public static ulong MakeUlongHas16BitOnTheLeft(ulong l)
-        {
-            ulong value = l;
-            ulong count = 0;
-            while (true)
-            {
-
-                count++;
-            }
-
-            return value;
-        }
-
-        public static string ToBinary64(ulong value)
-        {
-            char[] bits = new char[64];
-
-            for (int i = 63; i >= 0; i--)
-            {
-                bits[i] = (value & 1) == 1 ? '1' : '0';
-                value >>= 1;
-            }
-
-            return new string(bits);
-        }
-
-        public static string PrintBits(ulong value)
-        {
-            string result = "";
-            string bits = ToBinary64(value);
-            int count = 0;
-            foreach (char c in bits)
-            {
-                result += c;
-                count++;
-
-                if (count == 4)
-                {
-                    result += " ";
-                    count = 0;
-                }
-            }
-
-            return result;
-        }
-
-        public static string PrintBytes(byte[] messageBytes)
-        {
-            string result = "";
-
-            foreach (byte c in messageBytes)
-            {
-                result += Convert.ToString(c, 2).PadLeft(8, '0'); ;
-                result += " ";
-            }
-
-            return result;
-        }
-
-        private static byte[] Allocate(byte[] messageBytes)
-        {
-            var bytes = messageBytes.ToList();
-
-            while (bytes.Count <= 6)
-            {
-                bytes.Add(0b0);
-            }
-            return bytes.ToArray();
+            
+            return BitConverter.Int64BitsToDouble((long)rawNumber);
         }
 
         private static string Extractor(double nanNumber)
         {
-            return "";   
+            // 1) Extract raw bits
+            long raw = BitConverter.DoubleToInt64Bits(nanNumber);
+            ulong bits = unchecked((ulong)raw);
+            
+            // 1.5) Extract size of message 
+            ulong length = bits & 0b0000_0000_0000_0111_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000UL;
+            length = length >> 48;
+            
+            // 2) Extract bit from 48 to 0 
+            bits = bits & 0b00000000_00000000_11111111_11111111_11111111_11111111_11111111_11111111UL;
+            
+            // 3) parse bits to bytes
+            var bytes = new byte[length];
+            for (int i = 0; i < bytes.Length; i++)
+            {
+               ulong temp2 = ((bits << (16 + (8*i))) >> 56);
+               bytes[i] = (byte)(temp2 & 0b00000000_00000000_00000000_00000000_00000000_00000000_00000000_11111111UL);
+            }
+            
+            // 4. Parse to string 
+            string message = Encoding.UTF8.GetString(bytes);
+            
+            return message;   
         }
     }
 }
